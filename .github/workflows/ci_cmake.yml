@@ -69,7 +69,6 @@ jobs:
           - name: macOS 14 wxOSX
             runner: macos-14
             cmake_generator: Xcode
-            cmake_defines: -DCMAKE_VERBOSE_MAKEFILE=On
           - name: macOS 14 wxIOS
             runner: macos-14
             cmake_generator: Xcode
