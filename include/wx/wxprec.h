@@ -18,6 +18,10 @@
 
 #ifdef WX_PRECOMP
 
+// Define this as soon as possible and before string.h is included to get
+// memset_s() declaration from it if available.
+#define __STDC_WANT_LIB_EXT1__ 1
+
 // include "wx/chartype.h" first to ensure that UNICODE macro is correctly set
 // _before_ including <windows.h>
 #include "wx/chartype.h"
